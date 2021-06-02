@@ -1,0 +1,105 @@
+/* Variabel */
+:root {
+    --widthNav: 80px;
+    --colorCyan: #21BDCA;
+    --colorNav: linear-gradient(180deg, rgba(38, 61, 175, 1) 0%, rgba(40, 59, 153, 1) 100%);
+    --widthNavHp: 230px;
+    --widthNavHp-: -230px;
+}
+
+/* Class Buatan */
+.bg-cyan {
+    background-color: var(--colorCyan);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* Layout */
+#container {
+    display: grid;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main"
+        "sidebar footer";
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Nav Sidebar */
+#container nav {
+    grid-area: sidebar;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+#container nav .nav-container {
+    background: var(--colorNav);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: var(--widthNav);
+    transition: .3s ease;
+}
+
+#container nav .nav-container.melebar {
+    width: var(--widthNavHp);
+}
+
+#container nav a {
+    transition: all .3s ease;
+}
+
+#container nav .active,
+#container nav a:hover {
+    background-color: #233fcc;
+    color: white;
+}
+
+#container nav .active {
+    border-right: 2px solid white;
+}
+
+/* Lainnya */
+
+#container header {
+    grid-area: header;
+}
+
+#container main {
+    grid-area: main;
+}
+
+#container footer {
+    grid-area: footer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.212);
+}
+
+/* Tampilan HP */
+@media (max-width: 639px) {
+    #container {
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+    }
+
+    #container nav {
+        position: fixed;
+        transform: translateX(var(--widthNavHp-));
+        transition: .3s ease;
+    }
+
+    #container nav.melebar {
+        transform: translateX(0);
+    }
+}
+
+#benua {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

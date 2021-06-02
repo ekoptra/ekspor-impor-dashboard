@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import LandingPage from './view/LandingPage';
+import Dashboard from './view/Dashboard';
+import { useState, useEffect } from 'react';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
+  const [menu, setMenu] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <LandingPage setMenu={setMenu} />
+        </Route>
+        <Route path="/dashboard">
+          <Dashboard menu={menu} setMenu={setMenu} />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
