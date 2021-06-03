@@ -10,10 +10,9 @@ const SecondLanding = ({ setMenu }) => {
             </div>
 
             <p className="md:mt-16 mt-8 md:text-2xl text-xl text-gray-700 text-center md:px-10 quotes" data-aos="fade-up">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim exercitationem laborum, aperiam hic libero
-                esse voluptatum voluptates? Fugit vitae facilis, magni dolorem veniam alias expedita quos a fugiat totam
-                hic.
+                Dari tahun 2012 sampai 2016, nilai ekspor dan impor memiliki tren yang menurun, hingga mencapai titik terendah pada tahun 2016 dengan nilai ekspor sebesar $145.134 Juta dan impor sebesar $136.403 Juta.
             </p>
+            <small className="text-center mt-2 text-base block text-gray-400" data-aos="fade-up">Sumber Data: BPS di olah</small>
             <hr className="my-12 border-green-300 w-1/3 bg-green-300 mx-auto"></hr>
         </div>
     );
