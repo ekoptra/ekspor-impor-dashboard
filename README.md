@@ -8,7 +8,7 @@ Project ini adalah project untuk membangun sebuah dasboard untuk menampilkan dat
 
 Data yang diperoleh dari website BPS kemudian dioalah dengan tahapan sebagai berikut.
 
-1. Melakukan pengelompokkan data berdasarkan benua. Terdapat 5 benua yaitu benua Amerika Utara, Amerika Selatan, Afrika, Eropa, Asian dan Oceania & Australia
+1. Melakukan pengelompokkan data berdasarkan benua. Terdapat 6 benua yaitu benua Amerika Utara, Amerika Selatan, Afrika, Eropa, Asia dan Oceania & Australia
 2. Melakukan integrasi data, yaitu menggabungkan beberapa data kemudian pada proses penggabungan dilakukan perubahan penamaan variabel (nama kolom) sesuai dengan kebutuhan dan kemudahan dalam melakukan visualisasi.
 3. Melakukan penyamaan satuan dari nilai CIF, FOB dan juga berat bersih pada data komoditas ekspor dan impor.
 
@@ -24,7 +24,7 @@ Berdasarkan data yang diperoleh, kami menggunakan 3 jenis visualisasi data, yait
 
 ### Rancangan Dashboard
 
-Agar pengaturan datanya lebih baik, kami merancang 3 jenis dashboard, sebagai berikut.
+Agar pengaturan datanya lebih baik, kami memisahnya menjadi 3 jenis dashboard, yaitu sebagai berikut.
 
 1. **Dashboard utama**, yaitu dashboard yang menjelaskan perkembangan ekspor dan impor Indonesia tahun 2012 – 2019 berdasarkan benua
 2. **Dashboard ekspor**, yaitu dashboard yang menjelaskan perkembangan ekspor Indonesia tahun 2012 – 2019 dari sisi setiap komoditas. Terdapat 24 komoditas yang tersedia
@@ -60,7 +60,7 @@ Berikut juga link dari Tableau Public
 
 ## Cara Menggunakan
 
-Untuk menggunakan project ini dibutuhkan [Node Js](https://nodejs.org/en/). Setalah itu ikuti langkah berikut
+Untuk menggunakan project ini dibutuhkan [Node Js](https://nodejs.org/en/). Setelah itu ikuti langkah berikut
 
 ### Clone Repository
 
